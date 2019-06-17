@@ -1,0 +1,13 @@
+{
+    "name": "lcyitar/weather",
+    "description": "A weather SDK",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lcyitar",
+            "email": "17607004519@163.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
