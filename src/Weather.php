@@ -1,5 +1,14 @@
 <?php
 
+/*
+ * This file is part of the lcyitar/weather.
+ *
+ * (c) lcyitar <lcyitar@gmail.com>
+ *
+ * This source file is subject to the MIT license that is bundled
+ * with this source code in the file LICENSE.
+ */
+
 namespace Lcyitar\Weather;
 
 use GuzzleHttp\Client;
@@ -14,7 +23,7 @@ class Weather
     protected $key;
 
     /**
-     * @var array 
+     * @var array
      */
     protected $guzzleOptions = [];
 
@@ -34,12 +43,14 @@ class Weather
     }
 
     /**
-     * 获取天气
+     * 获取天气.
      *
      * @param $city 城市名 / 高德地址位置 adcode，比如：“深圳” 或者（adcode：440300）；
-     * @param string $type 返回内容类型：base: 返回实况天气 / all: 返回预报天气；
-     * @param string $format 输出的数据格式，默认为 json 格式，当 output 设置为 “xml” 时，输出的为 XML 格式的数据。
+     * @param string $type   返回内容类型：base: 返回实况天气 / all: 返回预报天气；
+     * @param string $format 输出的数据格式，默认为 json 格式，当 output 设置为 “xml” 时，输出的为 XML 格式的数据
+     *
      * @throws
+     *
      * @return mixed
      */
     public function getWeather($city, $type = 'base', $format = 'json')
@@ -81,5 +92,4 @@ class Weather
     {
         return $this->getWeather($city, 'all', $format);
     }
-
 }
