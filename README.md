@@ -4,6 +4,8 @@
 
 [![Build Status](https://travis-ci.com/Lcyitar/weather.svg?branch=master)](https://travis-ci.com/Lcyitar/weather)
 
+![StyleCI build status](https://github.styleci.io/repos/192442821/shield) 
+
 ## 安装
 
 ```bash
