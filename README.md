@@ -1,20 +1,20 @@
-#Weather
+# Weather
 
 基于 [高德开放平台](https://lbs.amap.com/dev/id/newuser) 的 PHP 天气组件。
 
-##安装
+## 安装
 
 ```bash
 $ composer require lcyitar/weather -vvv 
 ```
 
-##配置
+## 配置
 
 在使用本扩展之前，你需要去[高德开放平台](https://lbs.amap.com/dev/id/newuser)注册账号，然后创建应用，获取应用的 API Key。
 
-##使用
+## 使用
 
-```php
+```phpg
 use Lcyitar\Weather\Weather;
 
 $key = 'XXXXXXXXXXXXXXXXXXXX';
@@ -22,7 +22,7 @@ $key = 'XXXXXXXXXXXXXXXXXXXX';
 $weather = new Weather($key);
 ```
 
-###获取时时天气
+### 获取时时天气
 
 ```php
 $response = $whather->getWeather('深圳');
@@ -52,7 +52,7 @@ $response = $whather->getWeather('深圳');
 }
 ```
 
-###获取近期天气预报
+### 获取近期天气预报
 
 ```php
 $response = $weather->getWeather('深圳', 'all');
@@ -127,7 +127,7 @@ $response = $weather->getWeather('深圳', 'all');
 }
 ```
 
-###获取 XML 格式返回值
+### 获取 XML 格式返回值
 
 第三个参数为返回值类型，可选 `json` 与 `xml`，默认 `json`:
 
@@ -159,7 +159,7 @@ $response = $weather->getWeather('深圳', 'all', 'xml');
 </response>
 ```
 
-###参数说明
+### 参数说明
 
 ```php
 array|string getWeather(string $city, string $type = 'base', string $format = 'json')
