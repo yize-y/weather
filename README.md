@@ -25,7 +25,7 @@ $weather = new Weather($key);
 ### 获取时时天气
 
 ```php
-$response = $whather->getWeather('深圳');
+$response = $whather->getLiveWeather('深圳');
 ```
 
 示例：
@@ -55,7 +55,7 @@ $response = $whather->getWeather('深圳');
 ### 获取近期天气预报
 
 ```php
-$response = $weather->getWeather('深圳', 'all');
+$response = $weather->getForecastsWeather('深圳');
 ```
 
 示例：
