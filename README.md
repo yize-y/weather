@@ -3,7 +3,6 @@
 基于 [高德开放平台](https://lbs.amap.com/dev/id/newuser) 的 PHP 天气组件。
 
 [![Build Status](https://travis-ci.com/Lcyitar/weather.svg?branch=master)](https://travis-ci.com/Lcyitar/weather)
-
 ![StyleCI build status](https://github.styleci.io/repos/192442821/shield) 
 
 ## 安装
